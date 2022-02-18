@@ -27,17 +27,13 @@ namespace Practice.DataStructures
             if (root.Value.Equals(element))
             {
                 if (root.Right == null)
-                {
                     root = root.Left;
-                }
                 else
-                {
                     root = new TreeNode<T>(root.Right.Value)
                     {
                         Left = root.Left,
                         Right = root.Right.Right
                     };
-                }
             }
             else
                 root.Remove(element);
@@ -99,20 +95,7 @@ namespace Practice.DataStructures
                     return;
 
                 if (Left.Value.Equals(element))
-                {
-                    if (Left.Right == null)
-                    {
-                        Left = Left.Left;
-                    }
-                    else
-                    {
-                        Left = new TreeNode<T>(Left.Right.Value)
-                        {
-                            Left = Left.Left,
-                            Right = Left.Right.Right
-                        };
-                    }
-                }
+                    Left = RemoveChild(Left);
                 else
                     Left.Remove(element);
             }
@@ -122,22 +105,21 @@ namespace Practice.DataStructures
                     return;
 
                 if (Right.Value.Equals(element))
-                {
-                    if (Right.Right == null)
-                    {
-                        Right = Right.Left;
-                    }
-                    else
-                    {
-                        Right = new TreeNode<T>(Right.Right.Value)
-                        {
-                            Left = Right.Left,
-                            Right = Right.Right.Right
-                        };
-                    }
-                }
+                    Right = RemoveChild(Right);
                 else
                     Right.Remove(element);
+            }
+
+            static TreeNode<T> RemoveChild(TreeNode<T> child)
+            {
+                if (child.Right == null)
+                    return child.Left;
+
+                return new TreeNode<T>(child.Right.Value)
+                {
+                    Left = child.Left,
+                    Right = child.Right.Right
+                };
             }
         }
 
