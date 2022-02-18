@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.DataStructures", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.DataStructure.Tests", "Practice.DataStructure.Tests\Practice.DataStructure.Tests.csproj", "{03D73E86-313A-490B-98CC-4FE4DF96CA6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Sorting.Tests", "Practice.Sorting.Tests\Practice.Sorting.Tests.csproj", "{56EAEF22-DCBE-4846-9344-934841E82157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Sorting", "Practice.Sorting\Practice.Sorting.csproj", "{C142182A-393C-429C-AAD1-CDF9C067084E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{03D73E86-313A-490B-98CC-4FE4DF96CA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03D73E86-313A-490B-98CC-4FE4DF96CA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03D73E86-313A-490B-98CC-4FE4DF96CA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56EAEF22-DCBE-4846-9344-934841E82157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EAEF22-DCBE-4846-9344-934841E82157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EAEF22-DCBE-4846-9344-934841E82157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56EAEF22-DCBE-4846-9344-934841E82157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C142182A-393C-429C-AAD1-CDF9C067084E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C142182A-393C-429C-AAD1-CDF9C067084E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C142182A-393C-429C-AAD1-CDF9C067084E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C142182A-393C-429C-AAD1-CDF9C067084E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
