@@ -1,8 +1,8 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
+using Practice.Tests.Common;
 
 namespace Practice.Sorting.Tests
 {
@@ -21,12 +21,17 @@ namespace Practice.Sorting.Tests
         
         public static IEnumerable<TestCaseData> GetTestCases()
         {
-            var random = new Random();
-            var elements = Enumerable.Range(0, 10).Select(_ => random.Next(0, 100)).ToArray();
+            var intArrays = TestDataProvider.GetShuffledIntArrays();
 
             foreach (var sorting in GetSortings())
             {
-                yield return new TestCaseData(sorting, elements) {TestName = $"{sorting.GetType().Name}"};
+                foreach (var elements in intArrays)
+                {
+                    yield return new TestCaseData(sorting, elements)
+                    {
+                        TestName = $"{sorting.GetType().Name} - {elements.Length} shuffled elements"
+                    };
+                }
             }
         }
 

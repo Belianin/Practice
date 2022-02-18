@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Sorting.Tests", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Sorting", "Practice.Sorting\Practice.Sorting.csproj", "{C142182A-393C-429C-AAD1-CDF9C067084E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Tests.Common", "Practice.Tests.Common\Practice.Tests.Common.csproj", "{7DC577FB-6382-405E-B8A9-3E645DBD5693}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{C142182A-393C-429C-AAD1-CDF9C067084E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C142182A-393C-429C-AAD1-CDF9C067084E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C142182A-393C-429C-AAD1-CDF9C067084E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC577FB-6382-405E-B8A9-3E645DBD5693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC577FB-6382-405E-B8A9-3E645DBD5693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC577FB-6382-405E-B8A9-3E645DBD5693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC577FB-6382-405E-B8A9-3E645DBD5693}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
 using Practice.DataStructures;
+using Practice.Tests.Common;
 
 namespace Practice.DataStructure.Tests
 {
@@ -29,12 +28,17 @@ namespace Practice.DataStructure.Tests
 
         public static IEnumerable<TestCaseData> GetTestCases()
         {
-            var random = new Random();
-            var elements = Enumerable.Range(0, 10).Select(_ => random.Next(0, 100)).ToArray();
-
+            var intArrays = TestDataProvider.GetShuffledIntArrays();
+            
             foreach (var tree in GetBinarySearchTrees())
             {
-                yield return new TestCaseData(tree, elements) {TestName = $"{tree.GetType().Name}"};
+                foreach (var elements in intArrays)
+                {
+                    yield return new TestCaseData(tree, elements)
+                    {
+                        TestName = $"{tree.GetType().Name} - {elements.Length} shuffled elements"
+                    };
+                }
             }
         }
 

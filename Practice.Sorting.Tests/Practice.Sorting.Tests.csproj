@@ -17,6 +17,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Practice.Sorting\Practice.Sorting.csproj" />
+      <ProjectReference Include="..\Practice.Tests.Common\Practice.Tests.Common.csproj" />
     </ItemGroup>
 
 </Project>
