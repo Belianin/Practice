@@ -32,6 +32,7 @@ namespace Practice.Sorting.Tests
         public static IEnumerable<ISorting<int>> GetSortings()
         {
             yield return new BubbleSorting<int>();
+            yield return new InsertionSorting<int>();
         }
     }
 }
