@@ -15,7 +15,8 @@ namespace Practice.Sorting.Tests
 
             var result = sorting.Sort(elements);
 
-            result.Should().BeEquivalentTo(expected);
+            result.Should().BeEquivalentTo(expected,
+                opt => opt.WithStrictOrderingFor(e => e));
         }
         
         public static IEnumerable<TestCaseData> GetTestCases()

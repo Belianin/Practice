@@ -12,7 +12,7 @@ namespace Practice.Sorting
                 var j = i;
                 for (; j > 0; j--)
                 {
-                    if (temp.CompareTo(elements[j - 1]) > 0)
+                    if (temp.CompareTo(elements[j - 1]) < 0)
                     {
                         elements[j] = elements[j - 1];
                     }
