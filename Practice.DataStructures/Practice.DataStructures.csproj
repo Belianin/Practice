@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Practice.DataStructures</AssemblyName>
+        <RootNamespace>Practice.DataStructures</RootNamespace>
     </PropertyGroup>
 
 </Project>
