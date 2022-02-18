@@ -142,28 +142,5 @@ namespace Practice.DataStructures
         }
 
         public int Count => 1 + (Left?.Count ?? 0) + (Right?.Count ?? 0);
-
-        public static TreeNode<T> Merge(TreeNode<T> tree, TreeNode<T> otherTree)
-        {
-            if (tree == null)
-                return otherTree;
-            if (otherTree == null)
-                return tree;
-            
-            if (tree.Value.CompareTo(otherTree.Value) < 0)
-            {
-                return new TreeNode<T>(otherTree.Value)
-                {
-                    Right = otherTree.Right,
-                    Left = Merge(otherTree.Left, tree)
-                };
-            }
-
-            return new TreeNode<T>(tree.Value)
-            {
-                Right = tree.Right,
-                Left = Merge(tree.Left, otherTree)
-            };
-        }
     }
 }
